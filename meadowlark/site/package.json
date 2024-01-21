@@ -1,0 +1,25 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "Meadowlark Travel",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khorlane/NodeExpress.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "khorlane",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Khorlane/NodeExpress/issues"
+  },
+  "homepage": "https://github.com/Khorlane/NodeExpress#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
