@@ -3,7 +3,7 @@
 // *****************
 
 var express = require('express');
-var fortune = require('./lib/fortune.js');
+var Fortune = require('./lib/fortune.js');
 
 var app     = express();
 
@@ -25,7 +25,15 @@ app.get('/', function(req, res)
 // About page
 app.get('/about', function(req, res)
 {
-  res.render('about', {Fortune: fortune.GetFortune()});
+  res.render('about', {Fortune: Fortune.GetFortune()});
+});
+
+// Request header info
+app.get('/headers', function(req,res){
+  res.set('Content-Type','text/plain');
+  var s = '';
+  for(var name in req.headers) s += name + ': ' + req.headers[name] + '\n';
+  res.send(s);
 });
 
 // 404 catch-all handler (middleware)
