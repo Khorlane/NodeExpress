@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "Commit description:" desc
+read -p "Commit description: " desc
 cd ~/Projects/NodeExpress
 git add .
 git commit -m "$desc"

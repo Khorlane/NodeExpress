@@ -12,6 +12,8 @@ app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
 
+app.use(express.static(__dirname + '/public'));
+
 // Home page
 app.get('/', function(req, res)
 {
